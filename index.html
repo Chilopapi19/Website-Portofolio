@@ -1,0 +1,1409 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Rian</title>
+    <meta
+      name="description"
+      content="Portofolio Muhammad Rian Putra Pratama - Fresh Graduate S1 Teknik Informatika, Software & Technology Specialist."
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Poppins & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Konfigurasi Tailwind CSS -->
+    <script src="assets/js/tailwind-config.js"></script>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <!-- Body Website -->
+  <body
+    class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-500 selection:text-white"
+  >
+    <!-- Header & Navbar Section -->
+    <header
+      id="navbar"
+      class="fixed top-0 left-0 w-full z-50 transition-all duration-300 py-4 glass-card border-b border-slate-200/80 shadow-sm"
+    >
+      <div
+        class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between"
+      >
+        <a
+          href="#home"
+          class="font-heading font-bold text-xl sm:text-2xl tracking-tight flex items-center gap-2"
+        >
+          <span
+            class="w-9 h-9 rounded-xl gradient-bg flex items-center justify-center text-white text-sm font-extrabold shadow-md shadow-brand-500/20"
+            >MY</span
+          >
+          <span class="gradient-text"> Portofolio</span>
+        </a>
+
+        <!-- Desktop Navbar Menu -->
+        <nav
+          class="hidden md:flex items-center gap-7 font-medium text-sm text-slate-600"
+        >
+          <a href="#about" class="hover:text-brand-600 transition-colors"
+            >Tentang Saya</a
+          >
+          <a href="#skills" class="hover:text-brand-600 transition-colors"
+            >Keahlian</a
+          >
+          <a href="#projects" class="hover:text-brand-600 transition-colors"
+            >Proyek</a
+          >
+          <a href="#education" class="hover:text-brand-600 transition-colors"
+            >Pendidikan</a
+          >
+          <a href="#contact" class="hover:text-brand-600 transition-colors"
+            >Kontak</a
+          >
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <!-- CTA Unduh CV -->
+          <a
+            href="assets/docs/cv.pdf"
+            target="_blank"
+            download="CV_Muhammad_Rian_Putra_Pratama.pdf"
+            class="hidden sm:inline-flex px-4 py-2 rounded-xl gradient-bg text-white font-semibold text-sm shadow-md shadow-brand-500/20 hover:shadow-lg hover:shadow-brand-500/30 hover:-translate-y-0.5 active:translate-y-0 transition-all items-center gap-2"
+          >
+            <i class="fa-solid fa-file-arrow-down text-xs"></i>
+            <span>Unduh CV</span>
+          </a>
+
+          <!-- Mobile Menu Button -->
+          <button
+            id="mobile-menu-btn"
+            aria-label="Open Menu"
+            class="md:hidden p-2 rounded-lg text-slate-700 hover:bg-slate-100 focus:outline-none"
+          >
+            <i class="fa-solid fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navbar Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden px-4 pt-4 pb-6 mt-2 bg-white border-b border-slate-200 shadow-xl"
+      >
+        <div class="flex flex-col gap-3 font-medium text-slate-700">
+          <a href="#about" class="mobile-link py-2 border-b border-slate-100"
+            >Tentang Saya</a
+          >
+          <a href="#skills" class="mobile-link py-2 border-b border-slate-100"
+            >Keahlian</a
+          >
+          <a href="#projects" class="mobile-link py-2 border-b border-slate-100"
+            >Proyek</a
+          >
+          <a
+            href="#education"
+            class="mobile-link py-2 border-b border-slate-100"
+            >Pendidikan</a
+          >
+          <a href="#contact" class="mobile-link py-2 border-b border-slate-100"
+            >Kontak</a
+          >
+
+          <a
+            href="assets/docs/cv.pdf"
+            download="CV_Muhammad_Rian_Putra_Pratama.pdf"
+            class="w-full mt-2 py-2.5 rounded-xl gradient-bg text-white font-semibold text-sm shadow-md flex items-center justify-center gap-2"
+          >
+            <i class="fa-solid fa-file-arrow-down text-xs"></i>
+            <span>Unduh CV</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="pt-20">
+      <!-- Hero Section -->
+      <section
+        id="home"
+        class="min-h-[85vh] flex items-center justify-center relative overflow-hidden py-16 bg-gradient-to-b from-brand-50/50 via-slate-50 to-slate-50"
+      >
+        <!-- Background Accent Visuals -->
+        <div
+          class="absolute top-12 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-brand-500/10 rounded-full blur-3xl pointer-events-none"
+        ></div>
+        <div
+          class="absolute bottom-10 right-10 w-80 h-80 bg-accent-500/10 rounded-full blur-3xl pointer-events-none"
+        ></div>
+
+        <div
+          class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse lg:flex-row items-center justify-between gap-12 relative z-10"
+        >
+          <div class="flex-1 text-center lg:text-left reveal">
+            <!-- Badge Fresh Graduate -->
+            <div
+              class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-brand-100 text-brand-700 text-xs font-semibold shadow-sm mb-6"
+            >
+              <span
+                class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"
+              ></span>
+              Fresh Graduate | S1 Teknik Informatika
+            </div>
+
+            <h1
+              class="font-heading text-4xl sm:text-5xl lg:text-4xl font-extrabold text-slate-900 leading-tight tracking-tight mb-4"
+            >
+              Halo, Saya
+              <span class="gradient-text">Muhammad Rian Putra Pratama</span>
+            </h1>
+
+            <h2 class="text-xl sm:text-2xl font-semibold text-slate-600 mb-6">
+              Software & Technology Specialist.
+            </h2>
+
+            <p
+              class="text-slate-600 text-base sm:text-base max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed"
+            >
+              Lulusan baru teknik informatika yang berdedikasi tinggi dan
+              memiliki pemahaman mendalam tentang konsep teknologi informasi
+              serta pemecahan masalah. Memiliki kemampuan belajar yang cepat,
+              adaptif terhadap teknologi baru, dan siap memberikan kontribusi
+              terbaik secara profesional dalam lingkungan kerja.
+            </p>
+
+            <div
+              class="flex flex-wrap items-center justify-center lg:justify-start gap-4"
+            >
+              <a
+                href="#projects"
+                class="px-6 py-3.5 rounded-xl gradient-bg text-white font-semibold text-sm shadow-lg shadow-brand-500/25 hover:shadow-brand-500/40 hover:-translate-y-0.5 active:translate-y-0 transition-all flex items-center gap-2"
+              >
+                <span>Lihat Proyek</span>
+                <i class="fa-solid fa-arrow-down text-xs"></i>
+              </a>
+
+              <a
+                href="#contact"
+                class="px-6 py-3.5 rounded-xl bg-white text-slate-700 font-semibold text-sm border border-slate-200 hover:border-brand-500 hover:text-brand-600 hover:-translate-y-0.5 active:translate-y-0 transition-all shadow-sm flex items-center gap-2"
+              >
+                <i class="fa-regular fa-envelope"></i>
+                <span>Hubungi Saya</span>
+              </a>
+            </div>
+
+            <!-- Tautan Media Sosial -->
+            <div
+              class="mt-10 flex items-center justify-center lg:justify-start gap-4 text-slate-500"
+            >
+              <span
+                class="text-xs font-semibold text-slate-400 uppercase tracking-wider mr-2"
+                >Tautan Sosial:</span
+              >
+              <a
+                href="https://www.linkedin.com/in/muhammad-rian-putra-pratama-72b57141a/"
+                target="_blank"
+                aria-label="LinkedIn"
+                class="w-10 h-10 rounded-xl bg-white border border-slate-200 flex items-center justify-center hover:text-brand-600 hover:border-brand-500 transition-all shadow-sm"
+              >
+                <i class="fa-brands fa-linkedin-in text-lg"></i>
+              </a>
+
+              <a
+                href="https://github.com/Chilopapi19"
+                target="_blank"
+                aria-label="GitHub"
+                class="w-10 h-10 rounded-xl bg-white border border-slate-200 flex items-center justify-center hover:text-brand-600 hover:border-brand-500 transition-all shadow-sm"
+              >
+                <i class="fa-brands fa-github text-lg"></i>
+              </a>
+
+              <a
+                href="https://www.instagram.com/chillopapii?obrf=bWkyaHhjdGk3b2pt"
+                target="_blank"
+                aria-label="Instagram"
+                class="w-10 h-10 rounded-xl bg-white border border-slate-200 flex items-center justify-center hover:text-brand-600 hover:border-brand-500 transition-all shadow-sm"
+              >
+                <i class="fa-brands fa-instagram text-lg"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Avatar Card -->
+          <div class="flex-1 flex justify-center reveal">
+            <div class="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
+              <div
+                class="absolute inset-0 rounded-3xl gradient-bg rotate-6 opacity-20 blur-md"
+              ></div>
+              <div
+                class="relative w-full h-full rounded-3xl border-4 border-white bg-white shadow-xl overflow-hidden"
+              >
+                <img
+                  src="assets/images/foto_profil.jpg"
+                  alt="Muhammad Rian Putra Pratama Profile"
+                  class="w-full h-full object-cover object-top"
+                />
+              </div>
+
+              <!-- Floating Badge Status -->
+              <div
+                class="absolute -bottom-4 -left-4 bg-white border border-slate-100 p-4 rounded-2xl shadow-lg flex items-center gap-3"
+              >
+                <div
+                  class="w-10 h-10 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center font-bold"
+                >
+                  <i class="fa-solid fa-graduation-cap text-lg"></i>
+                </div>
+                <div>
+                  <div class="text-xs text-slate-400 font-medium">
+                    Status Kelulusan
+                  </div>
+                  <div class="text-xs font-bold text-slate-800">
+                    Lulus IPK 3.29 / 4.00
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tentang Saya -->
+      <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+            <h2
+              class="text-xs font-bold uppercase tracking-widest text-brand-600 mb-2"
+            >
+              Profil Singkat
+            </h2>
+            <h3
+              class="font-heading text-3xl sm:text-4xl font-bold text-slate-900"
+            >
+              Tentang Saya
+            </h3>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 reveal">
+              <h4 class="text-2xl font-bold text-slate-900 mb-4 font-heading">
+                Fresh graduate yang adaptif, berdedikasi, dan siap berkontribusi
+                dalam menghadirkan solusi teknologi.
+              </h4>
+
+              <p class="text-slate-600 mb-4 leading-relaxed">
+                Saya adalah lulusan baru sarjana komputer yang memiliki motivasi
+                tinggi untuk membangun karier profesional di bidang teknologi.
+                Selama studi, saya aktif mempelajari fondasi rekayasa perangkat
+                lunak, pengelolaan basis data, logika pemrograman, serta
+                pembelajaran mesin.
+              </p>
+
+              <p class="text-slate-600 mb-6 leading-relaxed">
+                Pengalaman saya dibangun melalui pengerjaan proyek teknologi,
+                mencakup pengembangan aplikasi web hingga perangkat lunak
+                desktop. Saya siap beradaptasi dengan alur kerja tim, cepat
+                menguasai teknologi baru, serta bekerja secara teliti dan
+                terorganisir.
+              </p>
+
+              <!-- Tag Highlight -->
+              <div class="flex flex-wrap gap-2.5">
+                <span
+                  class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-semibold"
+                >
+                  <i class="fa-solid fa-check text-brand-600 mr-1.5"></i
+                  >Database Architecture
+                </span>
+
+                <span
+                  class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-semibold"
+                >
+                  <i class="fa-solid fa-check text-brand-600 mr-1.5"></i>Desktop
+                  Application (VB.NET)
+                </span>
+
+                <span
+                  class="px-3.5 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-semibold"
+                >
+                  <i class="fa-solid fa-check text-brand-600 mr-1.5"></i>Machine
+                  Learning
+                </span>
+
+                <span
+                  class="px-3.5 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-semibold"
+                >
+                  <i class="fa-solid fa-check text-brand-600 mr-1.5"></i>OOP
+                  Concepts
+                </span>
+
+                <span
+                  class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-semibold"
+                >
+                  <i class="fa-solid fa-check text-brand-600 mr-1.5"></i>Web
+                  Development
+                </span>
+              </div>
+            </div>
+
+            <!-- Academic Stats Grid -->
+            <div class="lg:col-span-5 grid grid-cols-2 gap-4 reveal">
+              <div
+                class="p-6 rounded-2xl bg-slate-50 border border-slate-100 text-center hover:shadow-md transition-all"
+              >
+                <div
+                  class="text-3xl font-extrabold gradient-text font-heading mb-1"
+                >
+                  S1
+                </div>
+                <div class="text-xs font-semibold text-slate-600">
+                  Teknik Informatika
+                </div>
+              </div>
+
+              <div
+                class="p-6 rounded-2xl bg-slate-50 border border-slate-100 text-center hover:shadow-md transition-all"
+              >
+                <div
+                  class="text-3xl font-extrabold gradient-text font-heading mb-1"
+                >
+                  3.29
+                </div>
+                <div class="text-xs font-semibold text-slate-600">
+                  Indeks Prestasi Kumulatif
+                </div>
+              </div>
+
+              <div
+                class="p-6 rounded-2xl bg-slate-50 border border-slate-100 text-center hover:shadow-md transition-all"
+              >
+                <div
+                  class="text-3xl font-extrabold gradient-text font-heading mb-1"
+                >
+                  5
+                </div>
+                <div class="text-xs font-semibold text-slate-600">
+                  Proyek Selesai
+                </div>
+              </div>
+
+              <div
+                class="p-6 rounded-2xl bg-slate-50 border border-slate-100 text-center hover:shadow-md transition-all"
+              >
+                <div
+                  class="text-3xl font-extrabold gradient-text font-heading mb-1"
+                >
+                  100%
+                </div>
+                <div class="text-xs font-semibold text-slate-600">
+                  Komitmen Bertumbuh
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Keahlian & Penguasaan Teknologi -->
+      <section id="skills" class="py-20 bg-slate-100/60">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+            <h2
+              class="text-xs font-bold uppercase tracking-widest text-brand-600 mb-2"
+            >
+              Kemampuan Teknis
+            </h2>
+            <h3
+              class="font-heading text-3xl sm:text-4xl font-bold text-slate-900"
+            >
+              Keahlian & Penguasaan Teknologi
+            </h3>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Programming Language -->
+            <div
+              class="p-7 rounded-2xl bg-white border border-slate-200/80 shadow-sm reveal hover:shadow-md transition-all"
+            >
+              <div
+                class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-xl mb-6"
+              >
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <h4 class="text-lg font-bold text-slate-900 mb-4 font-heading">
+                Programming Language
+              </h4>
+
+              <div class="space-y-3 text-sm">
+                <div
+                  class="flex items-center gap-3 p-2.5 rounded-lg bg-slate-50 border border-slate-100"
+                >
+                  <div
+                    class="w-8 h-8 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center shrink-0"
+                  >
+                    <i class="fa-solid fa-brain text-xs"></i>
+                  </div>
+                  <span class="font-medium">Python</span>
+                </div>
+
+                <div
+                  class="flex items-center gap-3 p-2.5 rounded-lg bg-slate-50 border border-slate-100"
+                >
+                  <div
+                    class="w-8 h-8 rounded-lg bg-violet-100 text-violet-600 flex items-center justify-center shrink-0"
+                  >
+                    <i class="fa-solid fa-server text-xs"></i>
+                  </div>
+                  <span class="font-medium">PHP & SQL</span>
+                </div>
+
+                <div
+                  class="flex items-center gap-3 p-2.5 rounded-lg bg-slate-50 border border-slate-100"
+                >
+                  <div
+                    class="w-8 h-8 rounded-lg bg-orange-100 text-orange-600 flex items-center justify-center shrink-0"
+                  >
+                    <i class="fa-solid fa-code text-xs"></i>
+                  </div>
+                  <span class="font-medium">HTML & CSS</span>
+                </div>
+
+                <div
+                  class="flex items-center gap-3 p-2.5 rounded-lg bg-slate-50 border border-slate-100"
+                >
+                  <div
+                    class="w-8 h-8 rounded-lg bg-indigo-100 text-indigo-600 flex items-center justify-center shrink-0"
+                  >
+                    <i class="fa-solid fa-desktop text-xs"></i>
+                  </div>
+                  <span class="font-medium">Visual Basic (VB .NET)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Frameworks & Databases -->
+            <div
+              class="p-7 rounded-2xl bg-white border border-slate-200/80 shadow-sm reveal hover:shadow-md transition-all"
+            >
+              <div
+                class="w-12 h-12 rounded-xl bg-accent-50 text-accent-600 flex items-center justify-center text-xl mb-6"
+              >
+                <i class="fa-solid fa-layer-group"></i>
+              </div>
+              <h4 class="text-lg font-bold text-slate-900 mb-4 font-heading">
+                Tools & Frameworks
+              </h4>
+
+              <div class="space-y-3 text-sm">
+                <div
+                  class="flex items-center gap-3 p-2.5 rounded-lg bg-slate-50 border border-slate-100"
+                >
+                  <div
+                    class="w-8 h-8 rounded-lg bg-purple-100 text-purple-600 flex items-center justify-center shrink-0"
+                  >
+                    <i class="fa-brands fa-bootstrap text-xs"></i>
+                  </div>
+                  <span class="font-medium">Bootstrap</span>
+                </div>
+
+                <div
+                  class="flex items-center gap-3 p-2.5 rounded-lg bg-slate-50 border border-slate-100"
+                >
+                  <div
+                    class="w-8 h-8 rounded-lg bg-red-100 text-red-600 flex items-center justify-center shrink-0"
+                  >
+                    <i class="fa-solid fa-fire text-xs"></i>
+                  </div>
+                  <span class="font-medium">CodeIgniter4</span>
+                </div>
+
+                <div
+                  class="flex items-center gap-3 p-2.5 rounded-lg bg-slate-50 border border-slate-100"
+                >
+                  <div
+                    class="w-8 h-8 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center shrink-0"
+                  >
+                    <i class="fa-solid fa-window-maximize text-xs"></i>
+                  </div>
+                  <span class="font-medium">Visual Studio Code</span>
+                </div>
+
+                <div
+                  class="flex items-center gap-3 p-2.5 rounded-lg bg-slate-50 border border-slate-100"
+                >
+                  <div
+                    class="w-8 h-8 rounded-lg bg-sky-100 text-sky-600 flex items-center justify-center shrink-0"
+                  >
+                    <i class="fa-solid fa-database text-xs"></i>
+                  </div>
+                  <span class="font-medium">MySQL / SQL Server</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div
+              class="p-7 rounded-2xl bg-white border border-slate-200/80 shadow-sm reveal hover:shadow-md transition-all"
+            >
+              <div
+                class="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center text-xl mb-6"
+              >
+                <i class="fa-solid fa-user-gear"></i>
+              </div>
+              <h4 class="text-lg font-bold text-slate-900 mb-4 font-heading">
+                Soft Skills
+              </h4>
+
+              <div class="space-y-3 text-sm">
+                <div
+                  class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 flex items-center gap-2.5"
+                >
+                  <div
+                    class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0"
+                  >
+                    <i class="fa-solid fa-arrows-split-up-and-left text-xs"></i>
+                  </div>
+                  <span class="font-medium">Adaptabilitas</span>
+                </div>
+
+                <div
+                  class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 flex items-center gap-2.5"
+                >
+                  <div
+                    class="w-8 h-8 rounded-lg bg-rose-100 text-rose-600 flex items-center justify-center shrink-0"
+                  >
+                    <i class="fa-solid fa-clock text-xs"></i>
+                  </div>
+                  <span class="font-medium">Manajemen Waktu</span>
+                </div>
+
+                <div
+                  class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 flex items-center gap-2.5"
+                >
+                  <div
+                    class="w-8 h-8 rounded-lg bg-amber-100 text-amber-600 flex items-center justify-center shrink-0"
+                  >
+                    <i class="fa-solid fa-lightbulb text-xs"></i>
+                  </div>
+                  <span class="font-medium">Problem Solving & Logika</span>
+                </div>
+
+                <div
+                  class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 flex items-center gap-2.5"
+                >
+                  <div
+                    class="w-8 h-8 rounded-lg bg-sky-100 text-sky-600 flex items-center justify-center shrink-0"
+                  >
+                    <i class="fa-solid fa-users text-xs"></i>
+                  </div>
+                  <span class="font-medium">Kerjasama Tim & Komunikasi</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Proyek & Implementasi -->
+      <section id="projects" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+            <h2
+              class="text-xs font-bold uppercase tracking-widest text-brand-600 mb-2"
+            >
+              Portofolio Proyek
+            </h2>
+            <h3
+              class="font-heading text-3xl sm:text-4xl font-bold text-slate-900"
+            >
+              Proyek & Implementasi
+            </h3>
+            <p class="text-slate-500 text-sm mt-3">
+              Rangkuman proyek yang di bangun untuk menyelesaikan berbagai
+              permasalahan berbasis teknologi.
+            </p>
+          </div>
+
+          <!-- Category Filters -->
+          <div
+            class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-12 reveal"
+          >
+            <button
+              class="filter-btn active px-4 py-2 rounded-xl text-xs font-bold transition-all gradient-bg text-white shadow-sm"
+              data-filter="all"
+            >
+              Semua
+            </button>
+
+            <button
+              class="filter-btn px-4 py-2 rounded-xl text-xs font-bold transition-all bg-slate-100 text-slate-600 hover:bg-slate-200"
+              data-filter="web"
+            >
+              Website
+            </button>
+
+            <button
+              class="filter-btn px-4 py-2 rounded-xl text-xs font-bold transition-all bg-slate-100 text-slate-600 hover:bg-slate-200"
+              data-filter="desktop"
+            >
+              Desktop
+            </button>
+
+            <button
+              class="filter-btn px-4 py-2 rounded-xl text-xs font-bold transition-all bg-slate-100 text-slate-600 hover:bg-slate-200"
+              data-filter="ml"
+            >
+              Machine Learning
+            </button>
+          </div>
+
+          <!-- Proyek Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Proyek 1: Pelanggaran Zebra Cross -->
+            <div
+              class="project-card reveal group rounded-2xl bg-white border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
+              data-category="ml"
+            >
+              <div class="relative overflow-hidden aspect-video bg-slate-100">
+                <img
+                  src="assets/images/deteksi_zebra_cross.jpg"
+                  alt="Deteksi Pelanggaran Zebra Cross"
+                  class="w-full h-full object-fill group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <h4
+                    class="font-heading text-base font-bold text-slate-900 mb-2 group-hover:text-brand-600 transition-colors"
+                  >
+                    Deteksi Pelanggaran Zebra Cross Oleh Kendaraan Sepeda Motor
+                    Menggunakan Framework YOLO
+                  </h4>
+                  <p
+                    class="text-slate-600 text-sm mb-4 leading-relaxed line-clamp-3"
+                  >
+                    Sistem deteksi cerdas berbasis computer vision yang
+                    memanfaatkan framework YOLO untuk mengidentifikasi dan
+                    memantau pelanggaran lalu lintas di area penyeberangan jalan
+                    secara otomatis.
+                  </p>
+                </div>
+                <div>
+                  <div
+                    class="flex flex-wrap gap-1.5 mb-5 text-[11px] font-semibold text-slate-600"
+                  >
+                    <span class="bg-slate-100 px-2 py-1 rounded">YOLO</span>
+                    <span class="bg-slate-100 px-2 py-1 rounded">Python</span>
+                    <span class="bg-slate-100 px-2 py-1 rounded"
+                      >Machine Learning</span
+                    >
+                  </div>
+                  <button
+                    onclick="
+                      openProjectModal(
+                        'Deteksi Pelanggaran Zebra Cross Oleh Kendaraan Sepeda Motor Menggunakan Framework YOLO',
+                        'Sistem deteksi cerdas berbasis computer vision yang memanfaatkan framework YOLO untuk mengidentifikasi dan memantau pelanggaran lalu lintas di area penyeberangan jalan secara otomatis.',
+                        [
+                          'YOLO',
+                          'Python',
+                          'Machine Learning',
+                          'Google Collab',
+                          'Computer Vision',
+                          'Roboflow',
+                          'Object Detection',
+                        ],
+                      )
+                    "
+                    class="w-full py-2.5 rounded-xl border border-brand-500 text-brand-600 hover:bg-brand-50 text-xs font-bold transition-colors flex items-center justify-center gap-2"
+                  >
+                    <span>Detail Proyek & Deskripsi</span>
+                    <i class="fa-solid fa-circle-info"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Proyek 2: Website Absensi Elektronik -->
+            <div
+              class="project-card reveal group rounded-2xl bg-white border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
+              data-category="web"
+            >
+              <div class="relative overflow-hidden aspect-video bg-slate-100">
+                <img
+                  src="assets/images/absensi_elektronik.jpg"
+                  alt="Website Absensi Elektronik CodeIgniter4"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <h4
+                    class="font-heading text-base font-bold text-slate-900 mb-2 group-hover:text-brand-600 transition-colors"
+                  >
+                    Sistem Absensi Elektronik Karyawan Berbasis Validasi Wajah &
+                    Geolocation
+                  </h4>
+                  <p
+                    class="text-slate-600 text-sm mb-4 leading-relaxed line-clamp-3"
+                  >
+                    Aplikasi absensi elektronik yang memanfaatkan validasi wajah
+                    dan deteksi koordinat lokasi secara otomatis. Memudahkan
+                    proses pencatatan kehadiran yang akurat, aman, dan dapat
+                    diakses dengan cepat melalui perangkat seluler maupun
+                    peramban web.
+                  </p>
+                </div>
+                <div>
+                  <div
+                    class="flex flex-wrap gap-1.5 mb-5 text-[11px] font-semibold text-slate-600"
+                  >
+                    <span class="bg-slate-100 px-2 py-1 rounded">PHP</span>
+                    <span class="bg-slate-100 px-2 py-1 rounded"
+                      >CodeIgniter4</span
+                    >
+                    <span class="bg-slate-100 px-2 py-1 rounded">MySQL</span>
+                    <span class="bg-slate-100 px-2 py-1 rounded"
+                      >JavaScript</span
+                    >
+                  </div>
+                  <button
+                    onclick="
+                      openProjectModal(
+                        'Sistem Absensi Elektronik Karyawan Berbasis Validasi Wajah & Geolocation',
+                        'Aplikasi absensi elektronik yang memanfaatkan validasi wajah dan deteksi koordinat lokasi secara otomatis. Memudahkan proses pencatatan kehadiran yang akurat, aman, dan dapat diakses dengan cepat melalui perangkat seluler maupun peramban web.',
+                        [
+                          'PHP',
+                          'CodeIgniter4',
+                          'MySQL',
+                          'JavaScript',
+                          'HTML/CSS',
+                          'AdminLTE',
+                          'Leaflet',
+                        ],
+                      )
+                    "
+                    class="w-full py-2.5 rounded-xl border border-brand-500 text-brand-600 hover:bg-brand-50 text-xs font-bold transition-colors flex items-center justify-center gap-2"
+                  >
+                    <span>Detail Proyek & Deskripsi</span>
+                    <i class="fa-solid fa-circle-info"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Proyek 3: Aplikasi Desktop Manajemen Toko Onlie -->
+            <div
+              class="project-card reveal group rounded-2xl bg-white border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
+              data-category="desktop"
+            >
+              <div class="relative overflow-hidden aspect-video bg-slate-100">
+                <img
+                  src="assets/images/manajemen_toko_online.jpg"
+                  alt="Aplikasi Desktop Manajemen Toko Online"
+                  class="w-full h-full object-fill group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <h4
+                    class="font-heading text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-600 transition-colors"
+                  >
+                    Aplikasi Manajemen Toko Online Berbasis Desktop Menggunakan
+                    VB .NET
+                  </h4>
+                  <p
+                    class="text-slate-600 text-sm mb-4 leading-relaxed line-clamp-3"
+                  >
+                    Aplikasi pengolahan data toko terintegrasi yang dibangun
+                    menggunakan visual basic .NET. Memungkinkan pengguna untuk
+                    melakukan pencarian produk cepat, manajemen keranjang
+                    belanja, pencetakan struk transaksi, serta pemantauan
+                    ketersediaan barang di gudang guna meminimalisir kesalahan
+                    pencatatan manual.
+                  </p>
+                </div>
+                <div>
+                  <div
+                    class="flex flex-wrap gap-1.5 mb-5 text-[11px] font-semibold text-slate-600"
+                  >
+                    <span class="bg-slate-100 px-2 py-1 rounded"
+                      >Visual Basic 6.0 / .NET</span
+                    >
+                    <span class="bg-slate-100 px-2 py-1 rounded"
+                      >SQL Server</span
+                    >
+                  </div>
+                  <button
+                    onclick="
+                      openProjectModal(
+                        'Aplikasi Manajemen Toko Online Berbasis Desktop Menggunakan VB .NET',
+                        'Aplikasi pengolahan data toko terintegrasi yang dibangun menggunakan visual basic .NET. Memungkinkan pengguna untuk melakukan pencarian produk cepat, manajemen keranjang belanja, pencetakan struk transaksi, serta pemantauan ketersediaan barang di gudang guna meminimalisir kesalahan pencatatan manual.',
+                        [
+                          'Visual Basic 6.0 / .NET',
+                          'SQL Server',
+                          'SAP Crystal Reports',
+                        ],
+                      )
+                    "
+                    class="w-full py-2.5 rounded-xl border border-brand-500 text-brand-600 hover:bg-brand-50 text-xs font-bold transition-colors flex items-center justify-center gap-2"
+                  >
+                    <span>Detail Proyek & Deskripsi</span>
+                    <i class="fa-solid fa-circle-info"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Proyek 4: Website Manajemen Keuangan Kantor -->
+            <div
+              class="project-card reveal group rounded-2xl bg-white border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
+              data-category="web"
+            >
+              <div class="relative overflow-hidden aspect-video bg-slate-100">
+                <img
+                  src="assets/images/manajemen_keuangan.jpg"
+                  alt="Website Manajemen Keuangan Kantor"
+                  class="w-full h-full object-fill group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <h4
+                    class="font-heading text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-600 transition-colors"
+                  >
+                    Aplikasi Monitoring Keuangan & Rekapitulasi Kas Kantor
+                    Berbasis Website
+                  </h4>
+                  <p
+                    class="text-slate-600 text-sm mb-4 leading-relaxed line-clamp-3"
+                  >
+                    Platform web terintegrasi untuk pencatatan dan pengelolaan
+                    keuangan kantor secara transparan. Memungkinkan pencatatan
+                    transaksi pemasukan dan pengeluaran harian, pengelompokan
+                    kategori anggaran, serta penyajian laporan rekapitulasi
+                    keuangan berkala guna memudahkan monitoring anggaran secara
+                    akurat.
+                  </p>
+                </div>
+                <div>
+                  <div
+                    class="flex flex-wrap gap-1.5 mb-5 text-[11px] font-semibold text-slate-600"
+                  >
+                    <span class="bg-slate-100 px-2 py-1 rounded">PHP</span>
+                    <span class="bg-slate-100 px-2 py-1 rounded"
+                      >CodeIgniter4</span
+                    >
+                    <span class="bg-slate-100 px-2 py-1 rounded">MySQL</span>
+                    <span class="bg-slate-100 px-2 py-1 rounded"
+                      >JavaScript</span
+                    >
+                  </div>
+                  <button
+                    onclick="
+                      openProjectModal(
+                        'Aplikasi Monitoring Keuangan & Rekapitulasi Kas Kantor Berbasis Website',
+                        'Platform web terintegrasi untuk pencatatan dan pengelolaan keuangan kantor secara transparan. Memungkinkan pencatatan transaksi pemasukan dan pengeluaran harian, pengelompokan kategori anggaran, serta penyajian laporan rekapitulasi keuangan berkala guna memudahkan monitoring anggaran secara akurat.',
+                        [
+                          'PHP',
+                          'CodeIgniter4',
+                          'MySQL',
+                          'JavaScript',
+                          'HTML/CSS',
+                        ],
+                      )
+                    "
+                    class="w-full py-2.5 rounded-xl border border-brand-500 text-brand-600 hover:bg-brand-50 text-xs font-bold transition-colors flex items-center justify-center gap-2"
+                  >
+                    <span>Detail Proyek & Deskripsi</span>
+                    <i class="fa-solid fa-circle-info"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Proyek 5: Website Sistem Digitalisasi Administrasi Masjid -->
+            <div
+              class="project-card reveal group rounded-2xl bg-white border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
+              data-category="web"
+            >
+              <div class="relative overflow-hidden aspect-video bg-slate-100">
+                <img
+                  src="assets/images/sistem_digitalisasi_masjid.jpg"
+                  alt="Website Sistem Digitalisasi Administrasi Masjid"
+                  class="w-full h-full object-fill group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <h4
+                    class="font-heading text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-600 transition-colors"
+                  >
+                    Sistem Digitalisasi Administrasi Kas, Zakat, dan Qurban
+                    Masjid
+                  </h4>
+                  <p
+                    class="text-slate-600 text-sm mb-4 leading-relaxed line-clamp-3"
+                  >
+                    Platform layanan digital berbasis web yang memudahkan jemaah
+                    dan masyarakat dalam menunaikan pembayaran kas infak,
+                    penyetoran zakat, serta pendaftaran qurban secara online,
+                    cepat, dan transparan tanpa harus datang langsung ke
+                    sekretariat masjid.
+                  </p>
+                </div>
+                <div>
+                  <div
+                    class="flex flex-wrap gap-1.5 mb-5 text-[11px] font-semibold text-slate-600"
+                  >
+                    <span class="bg-slate-100 px-2 py-1 rounded">PHP</span>
+                    <span class="bg-slate-100 px-2 py-1 rounded"
+                      >CodeIgniter4</span
+                    >
+                    <span class="bg-slate-100 px-2 py-1 rounded">MySQL</span>
+                    <span class="bg-slate-100 px-2 py-1 rounded"
+                      >JavaScript</span
+                    >
+                  </div>
+                  <button
+                    onclick="
+                      openProjectModal(
+                        'Sistem Digitalisasi Administrasi Kas, Zakat, dan Qurban Masjid',
+                        'Platform layanan digital berbasis web yang memudahkan jemaah dan masyarakat dalam menunaikan pembayaran kas infak, penyetoran zakat, serta pendaftaran qurban secara online, cepat, dan transparan tanpa harus datang langsung ke sekretariat masjid.',
+                        [
+                          'PHP',
+                          'CodeIgniter4',
+                          'MySQL',
+                          'JavaScript',
+                          'HTML/CSS',
+                          'API myQuran',
+                        ],
+                      )
+                    "
+                    class="w-full py-2.5 rounded-xl border border-brand-500 text-brand-600 hover:bg-brand-50 text-xs font-bold transition-colors flex items-center justify-center gap-2"
+                  >
+                    <span>Detail Proyek & Deskripsi</span>
+                    <i class="fa-solid fa-circle-info"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pendidikan & Sertifikasi -->
+      <section id="education" class="py-20 bg-slate-100/60">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+            <h2
+              class="text-xs font-bold uppercase tracking-widest text-brand-600 mb-2"
+            >
+              Rekam Jejak Akademis
+            </h2>
+            <h3
+              class="font-heading text-3xl sm:text-4xl font-bold text-slate-900"
+            >
+              Pendidikan & Sertifikasi
+            </h3>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Pendidikan Formal -->
+            <div class="reveal">
+              <h4
+                class="text-xl font-bold text-slate-900 mb-6 font-heading flex items-center gap-3"
+              >
+                <span
+                  class="w-10 h-10 rounded-xl gradient-bg text-white flex items-center justify-center text-sm shadow-md"
+                >
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </span>
+                <span>Pendidikan Formal</span>
+              </h4>
+
+              <div class="relative pl-6 border-l-2 border-brand-200 space-y-8">
+                <div class="relative">
+                  <span
+                    class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-brand-600 border-4 border-white"
+                  ></span>
+                  <div
+                    class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm"
+                  >
+                    <span
+                      class="inline-block px-2.5 py-1 rounded-md bg-brand-50 text-brand-700 text-xs font-bold mb-2"
+                      >2021 - 2026</span
+                    >
+                    <h5 class="text-base font-bold text-slate-900">
+                      S1 Teknik Informatika
+                    </h5>
+                    <div class="text-sm font-semibold text-slate-600 mb-3">
+                      Universitas Indo Global Mandiri
+                    </div>
+                    <p class="text-xs text-slate-500 leading-relaxed mb-3">
+                      Lulus dengan IPK 3.29. Fokus studi pada pemrograman
+                      terstruktur, rekayasa perangkat lunak, dan basis data,
+                      serta pembelajaran mesin.
+                    </p>
+                    <div class="text-xs font-semibold text-slate-700">
+                      <strong>Mata Kuliah Relevan:</strong> Pemrograman Web,
+                      Pemrograman Visual, Algoritma & Struktur Data, Basis Data
+                      Lanjut, Manajemen Proyek Perangkat Lunak.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sertifikasi Akademik -->
+            <div class="reveal">
+              <h4
+                class="text-xl font-bold text-slate-900 mb-6 font-heading flex items-center gap-3"
+              >
+                <span
+                  class="w-10 h-10 rounded-xl gradient-bg text-white flex items-center justify-center text-sm shadow-md"
+                >
+                  <i class="fa-solid fa-certificate"></i>
+                </span>
+                <span>Sertifikasi Akademik</span>
+              </h4>
+
+              <div class="space-y-4">
+                <div
+                  class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex items-start gap-4"
+                >
+                  <div
+                    class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg shrink-0 mt-1"
+                  >
+                    <i class="fa-solid fa-award"></i>
+                  </div>
+                  <div>
+                    <span class="text-[11px] font-bold text-slate-400"
+                      >Sertifikasi Online</span
+                    >
+                    <h5 class="text-sm font-bold text-slate-900">TOEFL iBT</h5>
+                    <div class="text-xs font-medium text-slate-600 mb-1">
+                      British Council - EnglishScore Core Skills
+                    </div>
+                    <p class="text-xs text-slate-500">
+                      Sertifikasi CEFR B2-Upper Intermediate dengan skor 486
+                      untuk mendukung pemahaman instruksi teknis dan
+                      berinteraksi secara profesional.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex items-start gap-4"
+                >
+                  <div
+                    class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg shrink-0 mt-1"
+                  >
+                    <i class="fa-solid fa-award"></i>
+                  </div>
+                  <div>
+                    <span class="text-[11px] font-bold text-slate-400"
+                      >Sertifikasi Online</span
+                    >
+                    <h5 class="text-sm font-bold text-slate-900">
+                      AI Engineer For Milenial
+                    </h5>
+                    <div class="text-xs font-medium text-slate-600 mb-1">
+                      Pusat Pengembangan Literasi Digital
+                    </div>
+                    <p class="text-xs text-slate-500">
+                      Sertifikasi literasi digital yang mempelajari konsep dasar
+                      pemrosesan data, penggunaan tools AI modern, dan penerapan
+                      teknologi kecerdasan buatan secara efisien.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Kontak -->
+      <section id="contact" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+            <h2
+              class="text-xs font-bold uppercase tracking-widest text-brand-600 mb-2"
+            >
+              Komunikasi
+            </h2>
+            <h3
+              class="font-heading text-3xl sm:text-4xl font-bold text-slate-900"
+            >
+              Hubungi Saya
+            </h3>
+            <p class="text-slate-500 text-sm mt-2">
+              Terbuka untuk kesempatan kerja full-time, kontrak, maupun posisi
+              entry-level.
+            </p>
+          </div>
+
+          <!-- Kontak Info -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            <div class="lg:col-span-5 reveal space-y-4">
+              <div
+                class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80"
+              >
+                <h4 class="text-lg font-bold text-slate-900 mb-6 font-heading">
+                  Informasi Kontak
+                </h4>
+                <div class="space-y-5">
+                  <div class="flex items-center gap-4">
+                    <div
+                      class="w-11 h-11 rounded-xl gradient-bg flex items-center justify-center text-white shrink-0 shadow-sm"
+                    >
+                      <i class="fa-regular fa-envelope text-base"></i>
+                    </div>
+                    <div>
+                      <div
+                        class="text-[11px] text-slate-400 font-semibold uppercase"
+                      >
+                        Email
+                      </div>
+                      <a
+                        href="mailto:rian1905.work@gmail.com"
+                        class="text-sm font-bold text-slate-800 hover:text-brand-600 transition-colors"
+                      >
+                        rian1905.work@gmail.com
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="flex items-center gap-4">
+                    <div
+                      class="w-11 h-11 rounded-xl gradient-bg flex items-center justify-center text-white shrink-0 shadow-sm"
+                    >
+                      <i class="fa-brands fa-whatsapp text-lg"></i>
+                    </div>
+                    <div>
+                      <div
+                        class="text-[11px] text-slate-400 font-semibold uppercase"
+                      >
+                        WhatsApp
+                      </div>
+                      <a
+                        href="https://wa.me/6282269260158"
+                        target="_blank"
+                        rel="noopener"
+                        class="text-sm font-bold text-slate-800 hover:text-brand-600 transition-colors"
+                      >
+                        +62 822 6926 0158
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="flex items-center gap-4">
+                    <div
+                      class="w-11 h-11 rounded-xl gradient-bg flex items-center justify-center text-white shrink-0 shadow-sm"
+                    >
+                      <i class="fa-solid fa-location-dot text-base"></i>
+                    </div>
+                    <div>
+                      <div
+                        class="text-[11px] text-slate-400 font-semibold uppercase"
+                      >
+                        Domisili
+                      </div>
+                      <div class="text-sm font-bold text-slate-800">
+                        Palembang - Indonesia (Bersedia Relokasi)
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Form Kontak -->
+            <div class="lg:col-span-7 reveal">
+              <form
+                id="contact-form"
+                class="p-8 rounded-2xl bg-slate-50 border border-slate-200/80 shadow-sm space-y-5"
+              >
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  <div>
+                    <label
+                      for="name"
+                      class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2"
+                      >Nama Lengkap</label
+                    >
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      placeholder="Masukkan Nama Anda"
+                      class="w-full px-4 py-3 rounded-xl bg-white border border-slate-200 text-sm text-slate-800 focus:outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20 transition-all"
+                    />
+                  </div>
+
+                  <div>
+                    <label
+                      for="email"
+                      class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2"
+                      >Email</label
+                    >
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      placeholder="nama@perusahaan.com"
+                      class="w-full px-4 py-3 rounded-xl bg-white border border-slate-200 text-sm text-slate-800 focus:outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20 transition-all"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label
+                    for="subject"
+                    class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2"
+                    >Subjek Pesan</label
+                  >
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    required
+                    placeholder="Subjek Pesan / Keperluan"
+                    class="w-full px-4 py-3 rounded-xl bg-white border border-slate-200 text-sm text-slate-800 focus:outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20 transition-all"
+                  />
+                </div>
+
+                <div>
+                  <label
+                    for="message"
+                    class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2"
+                    >Pesan</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    required
+                    placeholder="Tuliskan detail pesan atau keperluan di sini..."
+                    class="w-full px-4 py-3 rounded-xl bg-white border border-slate-200 text-sm text-slate-800 focus:outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20 transition-all resize-none"
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="w-full py-3.5 rounded-xl gradient-bg text-white font-bold text-sm shadow-md shadow-brand-500/20 hover:shadow-lg hover:shadow-brand-500/30 hover:-translate-y-0.5 active:translate-y-0 transition-all flex items-center justify-center gap-2"
+                >
+                  <i class="fa-solid fa-paper-plane text-xs"></i>
+                  <span>Kirim Pesan</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="py-8 border-t border-slate-200 bg-white text-center text-xs text-slate-500"
+    >
+      <div
+        class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4"
+      >
+        <p>
+          &copy;<span id="year"></span> Muhammad Rian Putra Pratama. All rights
+          reserved.
+        </p>
+
+        <div class="flex items-center gap-4">
+          <a
+            href="https://www.linkedin.com/in/muhammad-rian-putra-pratama-72b57141a/"
+            target="_blank"
+            class="hover:text-brand-600 transition-colors"
+          >
+            <i class="fa-brands fa-linkedin text-base"></i>
+          </a>
+
+          <a
+            href="https://github.com/Chilopapi19"
+            target="_blank"
+            class="hover:text-brand-600 transition-colors"
+          >
+            <i class="fa-brands fa-github text-base"></i>
+          </a>
+
+          <a
+            href="https://www.instagram.com/chillopapii?obrf=bWkyaHhjdGk3b2pt"
+            target="_blank"
+            class="hover:text-brand-600 transition-colors"
+          >
+            <i class="fa-brands fa-instagram text-base"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal Interaktif Detail Proyek -->
+    <div
+      id="modal"
+      class="fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-50 hidden items-center justify-center p-4"
+    >
+      <div
+        class="bg-white rounded-2xl max-w-md w-full p-6 text-left shadow-2xl border border-slate-100 transform scale-95 opacity-0 transition-all duration-300"
+        id="modal-content"
+      >
+        <div id="modal-header" class="flex justify-between items-start mb-4">
+          <h4
+            id="modal-title"
+            class="text-lg font-bold font-heading text-slate-900"
+          >
+            Detail Proyek
+          </h4>
+          <button
+            onclick="closeModal()"
+            class="text-slate-400 hover:text-slate-600 p-1"
+          >
+            <i class="fa-solid fa-xmark text-lg"></i>
+          </button>
+        </div>
+
+        <p id="modal-desc" class="text-slate-600 text-sm mb-5 leading-relaxed">
+          Deskripsi lengkap proyek akan muncul di sini.
+        </p>
+
+        <div id="modal-tech-container" class="mb-6">
+          <div
+            class="text-xs font-bold text-slate-700 uppercase tracking-wider mb-2"
+          >
+            Teknologi Terkait:
+          </div>
+          <div id="modal-tech-badges" class="flex flex-wrap gap-1.5"></div>
+        </div>
+
+        <button
+          onclick="closeModal()"
+          class="w-full py-2.5 rounded-xl gradient-bg text-white font-bold text-xs shadow-md"
+        >
+          Tutup
+        </button>
+      </div>
+    </div>
+
+    <!-- Script JS -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
